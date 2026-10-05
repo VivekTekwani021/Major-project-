@@ -1,0 +1,135 @@
+# ============================================================
+# Simulation Parameters Configuration
+# ============================================================
+
+# Random seed for reproducibility
+random_seed: 42
+
+# Simulation time
+simulation:
+  begin_time: 0         # seconds
+  end_time: 3600        # seconds (1 hour)
+  step_length: 0.5      # seconds per step (0.5 for sublane model accuracy)
+
+# Vehicle type mix (percentages must sum to 100)
+vehicle_mix:
+  two_wheeler: 45
+  auto_rickshaw: 10
+  car: 30
+  bus: 5
+  bicycle: 5
+  truck: 5
+
+# Demand generation
+demand:
+  # Total number of trips to generate in the simulation period
+  total_trips: 500
+  # Departure distribution: "uniform" or "poisson"
+  departure_distribution: "uniform"
+  # Fringe factor: higher = more trips start/end at edge of network
+  fringe_factor: 5.0
+
+# Sublane model parameters
+sublane:
+  lateral_resolution: 0.5    # meters (how finely lateral positions are tracked)
+  
+# Vehicle type parameters (SUMO-compatible)
+vehicle_types:
+  two_wheeler:
+    vClass: motorcycle
+    length: 2.0
+    width: 0.8
+    maxSpeed: 16.67    # 60 km/h
+    accel: 2.6
+    decel: 4.5
+    sigma: 0.7         # driver imperfection
+    minGap: 1.0
+    latAlignment: "arbitrary"
+    minGapLat: 0.3
+    lcSublane: 1.0
+    speedFactor: "normc(1.0,0.1,0.7,1.3)"
+    color: "1,0.65,0"  # orange
+
+  auto_rickshaw:
+    vClass: passenger
+    length: 2.7
+    width: 1.4
+    maxSpeed: 11.11    # 40 km/h
+    accel: 1.5
+    decel: 3.5
+    sigma: 0.8
+    minGap: 1.0
+    latAlignment: "arbitrary"
+    minGapLat: 0.3
+    lcSublane: 1.0
+    speedFactor: "normc(1.0,0.1,0.6,1.2)"
+    color: "0,1,0"     # green
+
+  car:
+    vClass: passenger
+    length: 4.5
+    width: 1.8
+    maxSpeed: 16.67    # 60 km/h
+    accel: 2.6
+    decel: 4.5
+    sigma: 0.5
+    minGap: 2.5
+    latAlignment: "center"
+    minGapLat: 0.5
+    lcSublane: 1.0
+    speedFactor: "normc(1.0,0.1,0.7,1.3)"
+    color: "0,0,1"     # blue
+
+  bus:
+    vClass: bus
+    length: 12.0
+    width: 2.5
+    maxSpeed: 11.11    # 40 km/h
+    accel: 1.0
+    decel: 3.0
+    sigma: 0.5
+    minGap: 3.0
+    latAlignment: "center"
+    minGapLat: 0.3
+    lcSublane: 0.5
+    speedFactor: "normc(1.0,0.05,0.8,1.1)"
+    color: "1,0,0"     # red
+
+  bicycle:
+    vClass: bicycle
+    length: 1.8
+    width: 0.6
+    maxSpeed: 5.56     # 20 km/h
+    accel: 1.2
+    decel: 3.0
+    sigma: 0.9
+    minGap: 0.5
+    latAlignment: "arbitrary"
+    minGapLat: 0.2
+    lcSublane: 1.0
+    speedFactor: "normc(1.0,0.2,0.5,1.5)"
+    color: "0.5,0.5,0"  # olive
+
+  truck:
+    vClass: truck
+    length: 8.0
+    width: 2.4
+    maxSpeed: 11.11    # 40 km/h
+    accel: 0.8
+    decel: 3.0
+    sigma: 0.5
+    minGap: 3.0
+    latAlignment: "center"
+    minGapLat: 0.3
+    lcSublane: 0.5
+    speedFactor: "normc(1.0,0.05,0.8,1.1)"
+    color: "0.6,0.3,0"  # brown
+
+# Calibration parameters (grid search ranges)
+calibration:
+  # Speed penalty factor range [min, max, step]
+  speed_penalty_factor: [0.5, 1.5, 0.1]
+  # Driver imperfection sigma range
+  sigma_range: [0.3, 0.9, 0.1]
+  # Number of best parameter sets to report
+  top_k: 3

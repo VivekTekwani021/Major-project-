@@ -1,0 +1,55 @@
+# ============================================================
+# Study Corridors Configuration
+# Predefined bounding boxes for Indore, Madhya Pradesh
+# Format: [south, west, north, east] in decimal degrees
+# ============================================================
+
+default_corridor: ab_road
+
+corridors:
+  ab_road:
+    name: "AB Road Stretch (Indore)"
+    description: "Major arterial road through Indore city center"
+    bbox:
+      south: 22.700
+      west: 75.850
+      north: 22.740
+      east: 75.900
+    center:
+      lat: 22.720
+      lon: 75.875
+
+  vijay_nagar:
+    name: "Vijay Nagar Area (Indore)"
+    description: "Commercial and residential hub in Indore"
+    bbox:
+      south: 22.740
+      west: 75.880
+      north: 22.770
+      east: 75.920
+    center:
+      lat: 22.755
+      lon: 75.900
+
+  rajwada:
+    name: "Rajwada / Old City (Indore)"
+    description: "Historic old city with narrow streets and heavy mixed traffic"
+    bbox:
+      south: 22.714
+      west: 75.852
+      north: 22.724
+      east: 75.862
+    center:
+      lat: 22.719
+      lon: 75.857
+
+# Maximum allowed area in square kilometers for custom bounding boxes
+max_area_sq_km: 4.0
+
+# Map display settings
+map:
+  default_zoom: 14
+  min_zoom: 12
+  max_zoom: 18
+  tile_url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

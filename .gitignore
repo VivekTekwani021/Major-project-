@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+venv/
+.venv/
+env/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Data (large files)
+data/raw/
+data/models/
+data/videos/
+data/uploads/
+*.mp4
+*.avi
+*.mov
+*.pt
+*.onnx
+*.weights
+
+# SUMO generated
+*.net.xml
+*.rou.xml
+*.trips.xml
+*.sumocfg
+simulation/output/
+!simulation/configs/*.sumocfg
+
+# ML
+ml/runs/
+ml/datasets/
+wandb/
+
+# Reports (keep structure, ignore generated)
+reports/*.png
+reports/*.pdf
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+.docker/
+
+# Logs
+*.log
+logs/

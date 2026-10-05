@@ -1,0 +1,58 @@
+{
+  "description": "Demo simulation results for AB Road corridor. These are SYNTHETIC PLACEHOLDER values - not from actual SUMO simulation.",
+  "source": "synthetic_demo",
+  "is_demo": true,
+  "network_corridor": "ab_road",
+  "baseline": {
+    "scenario": "baseline",
+    "status": "completed",
+    "is_demo": true,
+    "avg_travel_time": 245.3,
+    "avg_speed": 8.12,
+    "avg_delay": 85.2,
+    "total_vehicles_completed": 423,
+    "throughput": 423.0,
+    "vehicle_mix": {
+      "two_wheeler": 45, "auto_rickshaw": 10, "car": 30,
+      "bus": 5, "bicycle": 5, "truck": 5
+    },
+    "edge_results": {
+      "edge_001": {"mean_speed": 9.5, "density": 18.2, "flow": 120},
+      "edge_002": {"mean_speed": 11.2, "density": 12.5, "flow": 95},
+      "edge_003": {"mean_speed": 7.8, "density": 22.1, "flow": 140},
+      "edge_004": {"mean_speed": 12.5, "density": 8.3, "flow": 70},
+      "edge_005": {"mean_speed": 6.1, "density": 28.5, "flow": 160},
+      "edge_006": {"mean_speed": 10.3, "density": 14.7, "flow": 105},
+      "edge_007": {"mean_speed": 8.9, "density": 19.4, "flow": 130},
+      "edge_008": {"mean_speed": 11.8, "density": 10.1, "flow": 85},
+      "edge_009": {"mean_speed": 7.2, "density": 24.6, "flow": 150},
+      "edge_010": {"mean_speed": 10.8, "density": 13.2, "flow": 98}
+    }
+  },
+  "realistic": {
+    "scenario": "realistic",
+    "status": "completed",
+    "is_demo": true,
+    "avg_travel_time": 312.7,
+    "avg_speed": 6.38,
+    "avg_delay": 152.6,
+    "total_vehicles_completed": 387,
+    "throughput": 387.0,
+    "vehicle_mix": {
+      "two_wheeler": 45, "auto_rickshaw": 10, "car": 30,
+      "bus": 5, "bicycle": 5, "truck": 5
+    },
+    "edge_results": {
+      "edge_001": {"mean_speed": 5.4, "density": 32.1, "flow": 98},
+      "edge_002": {"mean_speed": 10.2, "density": 14.0, "flow": 90},
+      "edge_003": {"mean_speed": 5.7, "density": 30.5, "flow": 110},
+      "edge_004": {"mean_speed": 12.5, "density": 8.3, "flow": 70},
+      "edge_005": {"mean_speed": 2.9, "density": 45.2, "flow": 85},
+      "edge_006": {"mean_speed": 8.4, "density": 18.9, "flow": 95},
+      "edge_007": {"mean_speed": 5.9, "density": 28.7, "flow": 105},
+      "edge_008": {"mean_speed": 11.1, "density": 11.0, "flow": 82},
+      "edge_009": {"mean_speed": 4.4, "density": 36.8, "flow": 92},
+      "edge_010": {"mean_speed": 9.4, "density": 15.5, "flow": 92}
+    }
+  }
+}

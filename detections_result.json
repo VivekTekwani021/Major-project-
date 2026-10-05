@@ -1,0 +1,245 @@
+{
+  "input": "d:\\Major Project\\data\\demo\\demo_detections.json",
+  "detections": [
+    {
+      "damage_class": "D40",
+      "confidence": 0.87,
+      "latitude": 22.7195,
+      "longitude": 75.8621,
+      "frame_number": 100,
+      "matched_edge_id": "edge_001"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.92,
+      "latitude": 22.7198,
+      "longitude": 75.8625,
+      "frame_number": 150,
+      "matched_edge_id": "edge_001"
+    },
+    {
+      "damage_class": "D20",
+      "confidence": 0.78,
+      "latitude": 22.7201,
+      "longitude": 75.863,
+      "frame_number": 200,
+      "matched_edge_id": "edge_001"
+    },
+    {
+      "damage_class": "D00",
+      "confidence": 0.65,
+      "latitude": 22.721,
+      "longitude": 75.8645,
+      "frame_number": 350,
+      "matched_edge_id": "edge_002"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.85,
+      "latitude": 22.7225,
+      "longitude": 75.866,
+      "frame_number": 500,
+      "matched_edge_id": "edge_003"
+    },
+    {
+      "damage_class": "D10",
+      "confidence": 0.72,
+      "latitude": 22.7228,
+      "longitude": 75.8665,
+      "frame_number": 550,
+      "matched_edge_id": "edge_003"
+    },
+    {
+      "damage_class": "D10",
+      "confidence": 0.68,
+      "latitude": 22.723,
+      "longitude": 75.8668,
+      "frame_number": 600,
+      "matched_edge_id": "edge_003"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.95,
+      "latitude": 22.725,
+      "longitude": 75.869,
+      "frame_number": 800,
+      "matched_edge_id": "edge_005"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.88,
+      "latitude": 22.7252,
+      "longitude": 75.8692,
+      "frame_number": 820,
+      "matched_edge_id": "edge_005"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.91,
+      "latitude": 22.7255,
+      "longitude": 75.8695,
+      "frame_number": 850,
+      "matched_edge_id": "edge_005"
+    },
+    {
+      "damage_class": "D20",
+      "confidence": 0.82,
+      "latitude": 22.7258,
+      "longitude": 75.8698,
+      "frame_number": 880,
+      "matched_edge_id": "edge_005"
+    },
+    {
+      "damage_class": "D20",
+      "confidence": 0.76,
+      "latitude": 22.726,
+      "longitude": 75.87,
+      "frame_number": 900,
+      "matched_edge_id": "edge_005"
+    },
+    {
+      "damage_class": "D10",
+      "confidence": 0.7,
+      "latitude": 22.727,
+      "longitude": 75.872,
+      "frame_number": 1050,
+      "matched_edge_id": "edge_006"
+    },
+    {
+      "damage_class": "D00",
+      "confidence": 0.63,
+      "latitude": 22.7272,
+      "longitude": 75.8722,
+      "frame_number": 1070,
+      "matched_edge_id": "edge_006"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.89,
+      "latitude": 22.7285,
+      "longitude": 75.874,
+      "frame_number": 1200,
+      "matched_edge_id": "edge_007"
+    },
+    {
+      "damage_class": "D20",
+      "confidence": 0.75,
+      "latitude": 22.7288,
+      "longitude": 75.8745,
+      "frame_number": 1250,
+      "matched_edge_id": "edge_007"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.93,
+      "latitude": 22.731,
+      "longitude": 75.878,
+      "frame_number": 1500,
+      "matched_edge_id": "edge_009"
+    },
+    {
+      "damage_class": "D20",
+      "confidence": 0.81,
+      "latitude": 22.7312,
+      "longitude": 75.8782,
+      "frame_number": 1520,
+      "matched_edge_id": "edge_009"
+    },
+    {
+      "damage_class": "D10",
+      "confidence": 0.67,
+      "latitude": 22.7315,
+      "longitude": 75.8785,
+      "frame_number": 1550,
+      "matched_edge_id": "edge_009"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.96,
+      "latitude": 22.734,
+      "longitude": 75.882,
+      "frame_number": 1800,
+      "matched_edge_id": "edge_012"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.9,
+      "latitude": 22.7342,
+      "longitude": 75.8822,
+      "frame_number": 1820,
+      "matched_edge_id": "edge_012"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.88,
+      "latitude": 22.7345,
+      "longitude": 75.8825,
+      "frame_number": 1850,
+      "matched_edge_id": "edge_012"
+    },
+    {
+      "damage_class": "D20",
+      "confidence": 0.79,
+      "latitude": 22.7348,
+      "longitude": 75.8828,
+      "frame_number": 1880,
+      "matched_edge_id": "edge_012"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.97,
+      "latitude": 22.738,
+      "longitude": 75.887,
+      "frame_number": 2200,
+      "matched_edge_id": "edge_015"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.94,
+      "latitude": 22.7382,
+      "longitude": 75.8872,
+      "frame_number": 2220,
+      "matched_edge_id": "edge_015"
+    },
+    {
+      "damage_class": "D40",
+      "confidence": 0.91,
+      "latitude": 22.7385,
+      "longitude": 75.8875,
+      "frame_number": 2250,
+      "matched_edge_id": "edge_015"
+    },
+    {
+      "damage_class": "D20",
+      "confidence": 0.85,
+      "latitude": 22.7388,
+      "longitude": 75.8878,
+      "frame_number": 2280,
+      "matched_edge_id": "edge_015"
+    },
+    {
+      "damage_class": "D20",
+      "confidence": 0.8,
+      "latitude": 22.739,
+      "longitude": 75.888,
+      "frame_number": 2300,
+      "matched_edge_id": "edge_015"
+    },
+    {
+      "damage_class": "D10",
+      "confidence": 0.73,
+      "latitude": 22.7392,
+      "longitude": 75.8882,
+      "frame_number": 2320,
+      "matched_edge_id": "edge_015"
+    },
+    {
+      "damage_class": "D00",
+      "confidence": 0.6,
+      "latitude": 22.7395,
+      "longitude": 75.8885,
+      "frame_number": 2350,
+      "matched_edge_id": "edge_015"
+    }
+  ]
+}

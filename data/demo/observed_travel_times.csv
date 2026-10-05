@@ -1,0 +1,6 @@
+route_name,origin,destination,observed_time_seconds,time_of_day,is_placeholder
+Route_A_AB_Road_North,"AB Road / Palasia Square","AB Road / Industry House",420,peak,true
+Route_B_AB_Road_South,"AB Road / Industry House","AB Road / Palasia Square",480,peak,true
+Route_C_Vijay_Nagar,"Vijay Nagar Square","Bombay Hospital",360,peak,true
+Route_D_MG_Road,"MG Road / GPO","MG Road / Treasure Island",300,offpeak,true
+Route_E_Ring_Road,"Ring Road / Bypass","AB Road Junction",540,peak,true

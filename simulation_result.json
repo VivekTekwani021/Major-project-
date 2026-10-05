@@ -1,0 +1,70 @@
+{
+  "scenario": "realistic",
+  "status": "completed",
+  "is_demo": true,
+  "avg_travel_time": 312.7,
+  "avg_speed": 6.38,
+  "avg_delay": 152.6,
+  "total_vehicles_completed": 387,
+  "throughput": 387.0,
+  "vehicle_mix": {
+    "two_wheeler": 45,
+    "auto_rickshaw": 10,
+    "car": 30,
+    "bus": 5,
+    "bicycle": 5,
+    "truck": 5
+  },
+  "edge_results": {
+    "edge_001": {
+      "mean_speed": 5.4,
+      "density": 32.1,
+      "flow": 98
+    },
+    "edge_002": {
+      "mean_speed": 10.2,
+      "density": 14.0,
+      "flow": 90
+    },
+    "edge_003": {
+      "mean_speed": 5.7,
+      "density": 30.5,
+      "flow": 110
+    },
+    "edge_004": {
+      "mean_speed": 12.5,
+      "density": 8.3,
+      "flow": 70
+    },
+    "edge_005": {
+      "mean_speed": 2.9,
+      "density": 45.2,
+      "flow": 85
+    },
+    "edge_006": {
+      "mean_speed": 8.4,
+      "density": 18.9,
+      "flow": 95
+    },
+    "edge_007": {
+      "mean_speed": 5.9,
+      "density": 28.7,
+      "flow": 105
+    },
+    "edge_008": {
+      "mean_speed": 11.1,
+      "density": 11.0,
+      "flow": 82
+    },
+    "edge_009": {
+      "mean_speed": 4.4,
+      "density": 36.8,
+      "flow": 92
+    },
+    "edge_010": {
+      "mean_speed": 9.4,
+      "density": 15.5,
+      "flow": 92
+    }
+  }
+}

@@ -1,0 +1,119 @@
+# ============================================================
+# Indian Road Rules Configuration
+# These rules are applied when OSM data is missing attributes.
+# All values are based on IRC (Indian Roads Congress) guidelines
+# and typical Indian urban road conditions.
+# ============================================================
+
+# Left-hand traffic (India drives on the left)
+left_hand_traffic: true
+
+# Default attributes by highway class when OSM tags are missing
+# Format: highway_tag -> {lanes, width_m, speed_kmh, ...}
+road_defaults:
+  motorway:
+    lanes: 4
+    lane_width_m: 3.5
+    speed_kmh: 80
+    is_divided: true
+    median_gap_interval_m: 1000
+    priority: 13
+
+  trunk:
+    lanes: 4
+    lane_width_m: 3.3
+    speed_kmh: 60
+    is_divided: true
+    median_gap_interval_m: 500
+    priority: 11
+
+  primary:
+    lanes: 2
+    lane_width_m: 3.3
+    speed_kmh: 50
+    is_divided: false
+    median_gap_interval_m: 400
+    priority: 9
+
+  secondary:
+    lanes: 2
+    lane_width_m: 3.0
+    speed_kmh: 40
+    is_divided: false
+    median_gap_interval_m: 0
+    priority: 7
+
+  tertiary:
+    lanes: 2
+    lane_width_m: 2.75
+    speed_kmh: 30
+    is_divided: false
+    median_gap_interval_m: 0
+    priority: 5
+
+  residential:
+    lanes: 1
+    lane_width_m: 2.75
+    speed_kmh: 20
+    is_divided: false
+    median_gap_interval_m: 0
+    priority: 3
+
+  unclassified:
+    lanes: 1
+    lane_width_m: 2.5
+    speed_kmh: 20
+    is_divided: false
+    median_gap_interval_m: 0
+    priority: 2
+
+  service:
+    lanes: 1
+    lane_width_m: 2.5
+    speed_kmh: 15
+    is_divided: false
+    median_gap_interval_m: 0
+    priority: 1
+
+  living_street:
+    lanes: 1
+    lane_width_m: 2.5
+    speed_kmh: 15
+    is_divided: false
+    median_gap_interval_m: 0
+    priority: 1
+
+# Oneway multiplier: if road is NOT oneway, multiply lane count by 2
+# (one direction is the default in the table above for non-oneway roads)
+oneway_lane_adjustment: true
+
+# Cleaning rules
+cleaning:
+  # Remove disconnected components smaller than this many edges
+  min_component_edges: 3
+  # Remove edges shorter than this (meters)
+  min_edge_length_m: 5.0
+  # Simplify geometry tolerance (meters) - 0 to disable
+  simplify_tolerance_m: 0
+  # Fix dead ends by connecting to nearest node within this distance (meters)
+  dead_end_connection_radius_m: 50.0
+
+# Road condition score → speed penalty mapping
+# condition_score is 0 (perfect) to 100 (worst)
+condition_penalty:
+  # Speed multiplier = max(min_speed_fraction, 1 - score * penalty_per_point)
+  penalty_per_point: 0.006
+  min_speed_fraction: 0.3
+  # Effective lane width reduction: lane_width * (1 - score * width_penalty_per_point)
+  width_penalty_per_point: 0.003
+  min_width_fraction: 0.5
+
+# Damage severity weights for condition score calculation
+damage_weights:
+  D00: 0.3   # Longitudinal Crack
+  D10: 0.3   # Transverse Crack
+  D20: 0.5   # Alligator Crack
+  D40: 1.0   # Pothole
+  D43: 0.8   # Crosswalk blur (less relevant but included in RDD2022)
+  D44: 0.4   # White line blur
+  default: 0.5

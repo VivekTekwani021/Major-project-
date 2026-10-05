@@ -1,0 +1,23 @@
+{
+  "description": "Demo condition scores for AB Road corridor, Indore. These are SYNTHETIC - not from real measurements.",
+  "source": "synthetic_demo",
+  "network_corridor": "ab_road",
+  "generated_at": "2026-01-01T00:00:00Z",
+  "scores": [
+    {"edge_id": "edge_001", "score": 72.5, "damage_counts": {"D40": 3, "D20": 2, "D00": 1}, "speed_penalty": 0.565, "width_penalty": 0.7825},
+    {"edge_id": "edge_002", "score": 15.0, "damage_counts": {"D00": 2}, "speed_penalty": 0.91, "width_penalty": 0.955},
+    {"edge_id": "edge_003", "score": 45.0, "damage_counts": {"D40": 1, "D10": 3}, "speed_penalty": 0.73, "width_penalty": 0.865},
+    {"edge_id": "edge_004", "score": 0.0, "damage_counts": {}, "speed_penalty": 1.0, "width_penalty": 1.0},
+    {"edge_id": "edge_005", "score": 88.0, "damage_counts": {"D40": 5, "D20": 4, "D10": 2}, "speed_penalty": 0.472, "width_penalty": 0.736},
+    {"edge_id": "edge_006", "score": 30.0, "damage_counts": {"D10": 2, "D00": 3}, "speed_penalty": 0.82, "width_penalty": 0.91},
+    {"edge_id": "edge_007", "score": 55.0, "damage_counts": {"D40": 2, "D20": 1}, "speed_penalty": 0.67, "width_penalty": 0.835},
+    {"edge_id": "edge_008", "score": 10.0, "damage_counts": {"D00": 1}, "speed_penalty": 0.94, "width_penalty": 0.97},
+    {"edge_id": "edge_009", "score": 65.0, "damage_counts": {"D40": 2, "D20": 3, "D10": 1}, "speed_penalty": 0.61, "width_penalty": 0.805},
+    {"edge_id": "edge_010", "score": 22.0, "damage_counts": {"D10": 1, "D00": 2}, "speed_penalty": 0.868, "width_penalty": 0.934},
+    {"edge_id": "edge_011", "score": 40.0, "damage_counts": {"D40": 1, "D00": 2}, "speed_penalty": 0.76, "width_penalty": 0.88},
+    {"edge_id": "edge_012", "score": 78.0, "damage_counts": {"D40": 4, "D20": 2, "D10": 3}, "speed_penalty": 0.532, "width_penalty": 0.766},
+    {"edge_id": "edge_013", "score": 5.0, "damage_counts": {"D00": 1}, "speed_penalty": 0.97, "width_penalty": 0.985},
+    {"edge_id": "edge_014", "score": 50.0, "damage_counts": {"D40": 1, "D20": 2, "D10": 1}, "speed_penalty": 0.70, "width_penalty": 0.85},
+    {"edge_id": "edge_015", "score": 92.0, "damage_counts": {"D40": 6, "D20": 5, "D10": 3, "D00": 2}, "speed_penalty": 0.448, "width_penalty": 0.724}
+  ]
+}
